@@ -1,0 +1,120 @@
+[debug] [2017-06-23T18:42:00.355Z] ----------------------------------------------------------------------
+[debug] [2017-06-23T18:42:00.357Z] Command:      C:\Program Files\nodejs\node.exe C:\Users\vanirut\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2017-06-23T18:42:00.358Z] CLI Version:  3.9.1
+[debug] [2017-06-23T18:42:00.358Z] Platform:     win32
+[debug] [2017-06-23T18:42:00.358Z] Node Version: v6.10.3
+[debug] [2017-06-23T18:42:00.358Z] Time:         Sat Jun 24 2017 01:42:00 GMT+0700 (SE Asia Standard Time)
+[debug] [2017-06-23T18:42:00.359Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-06-23T18:42:00.373Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-06-23T18:42:00.373Z] > authorizing via signed-in user
+[debug] [2017-06-23T18:42:00.375Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/thunder-assassins-pwa-hackaton  
+ Sat Jun 24 2017 01:42:00 GMT+0700 (SE Asia Standard Time)
+[debug] [2017-06-23T18:42:01.530Z] <<< HTTP RESPONSE 200
+[debug] [2017-06-23T18:42:01.531Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/thunder-assassins-pwa-hackaton/tokens  
+ Sat Jun 24 2017 01:42:01 GMT+0700 (SE Asia Standard Time)
+[debug] [2017-06-23T18:42:02.373Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'D:\Work\Challenge\thunder-assassins-pwa-hackaton'...
+[info] 
+[debug] [2017-06-23T18:42:02.377Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/thunder-assassins-pwa-hackaton  
+ Sat Jun 24 2017 01:42:02 GMT+0700 (SE Asia Standard Time)
+[debug] [2017-06-23T18:42:03.677Z] <<< HTTP RESPONSE 200
+[debug] [2017-06-23T18:42:03.677Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/334872395056/clients/_:getWebAppConfig  
+ Sat Jun 24 2017 01:42:03 GMT+0700 (SE Asia Standard Time)
+[debug] [2017-06-23T18:42:04.445Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
+[debug] [2017-06-24T02:07:52.278Z] ----------------------------------------------------------------------
+[debug] [2017-06-24T02:07:52.281Z] Command:      C:\Program Files\nodejs\node.exe C:\Users\vanirut\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2017-06-24T02:07:52.281Z] CLI Version:  3.9.1
+[debug] [2017-06-24T02:07:52.281Z] Platform:     win32
+[debug] [2017-06-24T02:07:52.281Z] Node Version: v6.10.3
+[debug] [2017-06-24T02:07:52.282Z] Time:         Sat Jun 24 2017 09:07:52 GMT+0700 (SE Asia Standard Time)
+[debug] [2017-06-24T02:07:52.282Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-06-24T02:07:52.296Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-06-24T02:07:52.296Z] > authorizing via signed-in user
+[debug] [2017-06-24T02:07:52.298Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-06-24T02:07:52.298Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/Br0bqttj1tzD45K5bRs32LhrW-HYzs1djiE5fho02UE',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sat Jun 24 2017 09:07:52 GMT+0700 (SE Asia Standard Time)
+[debug] [2017-06-24T02:07:53.055Z] <<< HTTP RESPONSE 200
+[debug] [2017-06-24T02:07:53.062Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/thunder-assassins-pwa-hackaton  
+ Sat Jun 24 2017 09:07:53 GMT+0700 (SE Asia Standard Time)
+[debug] [2017-06-24T02:07:55.891Z] <<< HTTP RESPONSE 200
+[debug] [2017-06-24T02:07:55.892Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/thunder-assassins-pwa-hackaton/tokens  
+ Sat Jun 24 2017 09:07:55 GMT+0700 (SE Asia Standard Time)
+[debug] [2017-06-24T02:07:57.137Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'D:\Work\Challenge\thunder-assassins-pwa-hackaton\hosting'...
+[info] 
+[debug] [2017-06-24T02:07:57.144Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/thunder-assassins-pwa-hackaton  
+ Sat Jun 24 2017 09:07:57 GMT+0700 (SE Asia Standard Time)
+[debug] [2017-06-24T02:07:59.086Z] <<< HTTP RESPONSE 200
+[debug] [2017-06-24T02:07:59.086Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/334872395056/clients/_:getWebAppConfig  
+ Sat Jun 24 2017 09:07:59 GMT+0700 (SE Asia Standard Time)
+[debug] [2017-06-24T02:08:01.235Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
+[debug] [2017-06-24T02:10:03.364Z] ----------------------------------------------------------------------
+[debug] [2017-06-24T02:10:03.366Z] Command:      C:\Program Files\nodejs\node.exe C:\Users\vanirut\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2017-06-24T02:10:03.367Z] CLI Version:  3.9.1
+[debug] [2017-06-24T02:10:03.367Z] Platform:     win32
+[debug] [2017-06-24T02:10:03.367Z] Node Version: v6.10.3
+[debug] [2017-06-24T02:10:03.367Z] Time:         Sat Jun 24 2017 09:10:03 GMT+0700 (SE Asia Standard Time)
+[debug] [2017-06-24T02:10:03.367Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-06-24T02:10:03.381Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-06-24T02:10:03.381Z] > authorizing via signed-in user
+[debug] [2017-06-24T02:10:03.383Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/thunder-assassins-pwa-hackaton  
+ Sat Jun 24 2017 09:10:03 GMT+0700 (SE Asia Standard Time)
+[debug] [2017-06-24T02:10:06.441Z] <<< HTTP RESPONSE 200
+[debug] [2017-06-24T02:10:06.442Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/thunder-assassins-pwa-hackaton/tokens  
+ Sat Jun 24 2017 09:10:06 GMT+0700 (SE Asia Standard Time)
+[debug] [2017-06-24T02:10:08.743Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'D:\Work\Challenge\thunder-assassins-pwa-hackaton\hosting'...
+[info] 
+[debug] [2017-06-24T02:10:08.762Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/thunder-assassins-pwa-hackaton  
+ Sat Jun 24 2017 09:10:08 GMT+0700 (SE Asia Standard Time)
+[debug] [2017-06-24T02:10:10.577Z] <<< HTTP RESPONSE 200
+[debug] [2017-06-24T02:10:10.578Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/334872395056/clients/_:getWebAppConfig  
+ Sat Jun 24 2017 09:10:10 GMT+0700 (SE Asia Standard Time)
+[debug] [2017-06-24T02:10:11.738Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
+[debug] [2017-06-24T02:11:31.512Z] ----------------------------------------------------------------------
+[debug] [2017-06-24T02:11:31.514Z] Command:      C:\Program Files\nodejs\node.exe C:\Users\vanirut\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2017-06-24T02:11:31.515Z] CLI Version:  3.9.1
+[debug] [2017-06-24T02:11:31.515Z] Platform:     win32
+[debug] [2017-06-24T02:11:31.515Z] Node Version: v6.10.3
+[debug] [2017-06-24T02:11:31.515Z] Time:         Sat Jun 24 2017 09:11:31 GMT+0700 (SE Asia Standard Time)
+[debug] [2017-06-24T02:11:31.515Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-06-24T02:11:31.528Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-06-24T02:11:31.528Z] > authorizing via signed-in user
+[debug] [2017-06-24T02:11:31.530Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/thunder-assassins-pwa-hackaton  
+ Sat Jun 24 2017 09:11:31 GMT+0700 (SE Asia Standard Time)
+[debug] [2017-06-24T02:11:33.190Z] <<< HTTP RESPONSE 200
+[debug] [2017-06-24T02:11:33.192Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/thunder-assassins-pwa-hackaton/tokens  
+ Sat Jun 24 2017 09:11:33 GMT+0700 (SE Asia Standard Time)
+[debug] [2017-06-24T02:11:34.362Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'D:\Work\Challenge\thunder-assassins-pwa-hackaton\hosting'...
+[info] 
+[debug] [2017-06-24T02:11:34.370Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/thunder-assassins-pwa-hackaton  
+ Sat Jun 24 2017 09:11:34 GMT+0700 (SE Asia Standard Time)
+[debug] [2017-06-24T02:11:36.239Z] <<< HTTP RESPONSE 200
+[debug] [2017-06-24T02:11:36.239Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/334872395056/clients/_:getWebAppConfig  
+ Sat Jun 24 2017 09:11:36 GMT+0700 (SE Asia Standard Time)
+[debug] [2017-06-24T02:11:37.757Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
