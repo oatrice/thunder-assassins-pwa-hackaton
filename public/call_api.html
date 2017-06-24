@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Call API</title>
+    <script src="script/jquery.min.js"></script>
+    <script>
+
+        $( document ).ready(function() {
+            console.log( "ready!" );
+        });
+
+        $(function() {
+        console.log('data');
+
+        var weather = [];
+
+        $.getJSON('https://api.apixu.com/v1/current.json?key=d8385e5dd9f14e41b64180343172306&q=13.83,100.48', function(data) {
+            
+                console.log(data);
+                
+                var tblRow = "<tr>" + "<td>" + data.location.name + "</td>" +
+                    "<td>" + data.location.region + "</td>" + "<td>" + data.current.temp_c + "</td>" + "<td>" + data.current.wind_kph + "</td>" + "</tr>"
+                    $(tblRow).appendTo("#userdata tbody");
+
+            });
+
+        });
+    </script>
+
+  </head>
+    <body>
+        <div class="wrapper">
+            <div class="profile">
+                <table id= "userdata" border="2">
+                    <thead>
+                        <th>Name</th>
+                        <th>Region</th>
+                        <th>Temp (Celcius)</th>
+                        <th>Wind Speed(KPH)</th>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </body>
+</html>
