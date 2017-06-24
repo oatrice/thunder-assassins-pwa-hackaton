@@ -1,13 +1,20 @@
-// Initialize the default app
-var defaultApp = firebase.initializeApp(defaultAppConfig);
+var googleProvider = new firebase.auth.GoogleAuthProvider();
+var facebookProvider = new firebase.auth.FacebookAuthProvider();
 
-console.log(defaultApp.name);  // "[DEFAULT]"
+function onSignInGoogleButtonClick() {
+    firebase.auth().signInWithPopup(googleProvider).then(function(result) {
+        console.log(result);
+        //Do something when login complete
+    }).catch(function(error) {
+        //Do something when error
+    });
+}
 
-// You can retrieve services via the defaultApp variable...
-var defaultStorage = defaultApp.storage();
-var defaultDatabase = defaultApp.database();
-
-// ... or you can use the equivalent shorthand notation
-defaultStorage = firebase.storage();
-defaultDatabase = firebase.database();
-
+function onSignInFacebookButtonClick() {
+    firebase.auth().signInWithPopup(facebookProvider).then(function(result) {
+        console.log(result);
+        //Do something when login complete
+    }).catch(function(error) {
+        //Do something when error
+    });
+}
