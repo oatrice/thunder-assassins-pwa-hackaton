@@ -12,6 +12,22 @@ Vue.config.productionTip = false
 
 Vue.use(VueMaterial)
 
+Vue.material.registerTheme('button-login-facebook', {
+  primary: {
+    color: 'blue',
+    hue: 900,
+    textColor: 'white'
+  }
+})
+
+Vue.material.registerTheme('button-login-google', {
+  primary: {
+    color: 'red',
+    hue: 900,
+    textColor: 'white'
+  }
+})
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
@@ -19,3 +35,5 @@ new Vue({
   template: '<App/>',
   components: { App }
 })
+
+Vue.material.setCurrentTheme('button-login-facebook')
