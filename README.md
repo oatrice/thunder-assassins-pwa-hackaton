@@ -1,4 +1,4 @@
-# thunder-assassins
+# Thunder-Assassins
 
 > A Vue.js project
 
