@@ -14,10 +14,10 @@
         <md-card-content>          
           <md-layout md-column md-gutter>
             <md-theme md-name="button-login-facebook">
-              <md-button class="md-raised md-primary" v-on:click="fillTable()"><div class="md-subheading" style="margin:10px">Facebook</div></md-button>
+              <md-button class="md-raised md-primary" v-on:click="onSignInFacebookButtonClick()"><div class="md-subheading" style="margin:10px">Facebook</div></md-button>
             </md-theme>
             <md-theme md-name="button-login-google">
-              <md-button class="md-raised md-primary" v-on:click="clearTable()"><div class="md-subheading" style="margin:10px">Google</div></md-button>
+              <md-button class="md-raised md-primary" v-on:click="onSignInGoogleButtonClick()"><div class="md-subheading" style="margin:10px">Google</div></md-button>
             </md-theme>
           </md-layout>
         </md-card-content>
@@ -28,6 +28,23 @@
 </template>
 
 <script>
+
+import Firebase from 'firebase'
+
+var config = {
+  apiKey: 'AIzaSyCXYQnNT1nLdeLTFJSdodY7NLn6tvOsJ6o',
+  authDomain: 'thunder-assassins-pwa-hackaton.firebaseapp.com',
+  databaseURL: 'https://thunder-assassins-pwa-hackaton.firebaseio.com',
+  projectId: 'thunder-assassins-pwa-hackaton',
+  storageBucket: 'thunder-assassins-pwa-hackaton.appspot.com',
+  messagingSenderId: '334872395056'
+}
+
+Firebase.initializeApp(config)
+
+var googleProvider = new Firebase.auth.GoogleAuthProvider()
+var facebookProvider = new Firebase.auth.FacebookAuthProvider()
+
 export default {
   name: 'main_login',
   data: function () {
@@ -36,8 +53,21 @@ export default {
     }
   },
   methods: {
-    fillTable: function () {},
-    clearTable: function () {}
+    onSignInFacebookButtonClick: function () {
+      Firebase.auth().signInWithPopup(facebookProvider).then(function (result) {
+        console.log(result)
+      })
+      .catch(function (error) {
+        console.log(error)
+      })
+    },
+    onSignInGoogleButtonClick: function () {
+      Firebase.auth().signInWithPopup(googleProvider).then(function (result) {
+        console.log(result)
+      }).catch(function (error) {
+        console.log(error)
+      })
+    }
   }
 }
 </script>
@@ -55,10 +85,6 @@ export default {
   background-attachment: fixed;
   background-size:  cover;
   background-color: #999;
-
-  /*height: 100%; 
-  width: 100%; */
-
 
   height: 100vh;
   width: 100%;
