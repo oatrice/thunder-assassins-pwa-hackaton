@@ -28,6 +28,12 @@ Vue.material.registerTheme('button-login-google', {
   }
 })
 
+Vue.material.registerTheme('header-login', {
+  primary: {
+    textColor: '#324a5e'
+  }
+})
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
@@ -35,5 +41,3 @@ new Vue({
   template: '<App/>',
   components: { App }
 })
-
-Vue.material.setCurrentTheme('button-login-facebook')

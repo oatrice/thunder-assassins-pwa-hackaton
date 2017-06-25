@@ -2,8 +2,10 @@
 <div class="fluid-container">
   <div class="login">
     <img src="../assets/electricity.png" hieght="200" width="200" style="margin-top:40px; margin-bottom:20px">
-    <div class="md-display-3"  style="margin-bottom:20px">Thunder Bolt</div>
-    <div class="md-display-1"  style="margin-bottom:20px">รู้ทัน รู้เร็ว รู้จริง รู้ทุกเรื่องเกี่ยวกับสภาพอากาศ</div>
+    <md-theme md-name="header-login">
+      <div class="md-display-3" id="hhh"  style="margin-bottom:20px">Thunder Bolt</div>
+      <div class="md-display-1" style="margin-bottom:20px">รู้ทัน รู้เร็ว รู้จริง รู้ทุกเรื่องเกี่ยวกับสภาพอากาศ</div>
+    </md-theme>    
     <md-layout md-align="center">
       <md-card  style="padding:20px">
         <md-card-header>
@@ -67,6 +69,10 @@ export default {
 .fluid-container {
     margin-right: auto;
     margin-left: auto;
+}
+
+.header-login {
+    text-color: #324a5e;
 }
 
 </style>
