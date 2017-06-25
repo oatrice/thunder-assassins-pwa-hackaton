@@ -28,6 +28,14 @@ Vue.material.registerTheme('button-login-google', {
   }
 })
 
+Vue.material.registerTheme('button-subscript', {
+  primary: {
+    color: 'green',
+    hue: 900,
+    textColor: 'white'
+  }
+})
+
 Vue.material.registerTheme('header-login', {
   primary: {
     textColor: '#324a5e'
